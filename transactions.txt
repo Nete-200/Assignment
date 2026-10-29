@@ -1,0 +1,23 @@
+2026-10-18 11:52:32 | Account: S001 | Type: INTEREST | Amount: M75.00 | Balance: M1500.00 | Result: Interest calculated
+2026-10-18 11:56:04 | Account: N/A | Type: INPUT | Amount: M0.00 | Balance: N/A | Result: Rejected: invalid numeric menu input
+2026-10-18 11:56:04 | Account: N/A | Type: INPUT | Amount: M0.00 | Balance: N/A | Result: Rejected: invalid numeric menu input
+2026-10-18 11:57:19 | Account: 2000 | Type: DEPOSIT | Amount: M0.00 | Balance: N/A | Result: Rejected: account not found
+2026-10-18 11:57:46 | Account: S001 | Type: DEPOSIT | Amount: M2000.00 | Balance: M3500.00 | Result: Successful
+2026-10-18 11:59:10 | Account: C001 | Type: WITHDRAWAL | Amount: M200.00 | Balance: M2800.00 | Result: Successful
+2026-10-18 11:59:52 | Account: S001 | Type: TRANSFER OUT | Amount: M200.00 | Balance: M3300.00 | Result: Successful; sent to C001
+2026-10-18 11:59:52 | Account: C001 | Type: TRANSFER IN | Amount: M200.00 | Balance: M3000.00 | Result: Successful; received from S001
+2026-10-18 12:00:19 | Account: C001 | Type: INTEREST | Amount: M0.00 | Balance: M3000.00 | Result: Interest calculated
+2026-10-18 12:00:50 | Account: S001 | Type: LOAN | Amount: M100.00 | Balance: M3300.00 | Result: Approved
+2026-10-18 12:05:08 | Account: S001 | Type: WITHDRAWAL | Amount: M1500.00 | Balance: M1500.00 | Result: Rejected: Savings account must retain at least M100.00.
+2026-10-18 12:17:42 | Account: S001 | Type: DEPOSIT | Amount: M-500.00 | Balance: M1500.00 | Result: Rejected: Deposit must be greater than zero.
+2026-10-18 12:18:03 | Account: 0 | Type: LOAN | Amount: M0.00 | Balance: N/A | Result: Rejected: account not found
+2026-10-18 12:18:28 | Account: S001 | Type: LOAN | Amount: M0.00 | Balance: M1500.00 | Result: Rejected: Loan must be positive and cannot exceed M10000.00.
+2026-10-21 18:28:02 | Account: 900 | Type: DEPOSIT | Amount: M60.00 | Balance: M1560.00 | Result: Successful
+2026-10-21 18:31:01 | Account: 900 | Type: TRANSFER OUT | Amount: M70.00 | Balance: M1490.00 | Result: Successful; sent to 9001
+2026-10-21 18:31:01 | Account: 9001 | Type: TRANSFER IN | Amount: M70.00 | Balance: M3070.00 | Result: Successful; received from 900
+2026-10-25 13:09:53 | Account: 900 | Type: DEPOSIT | Amount: M500.00 | Balance: M2000.00 | Result: Successful
+2026-10-25 13:13:06 | Account: 9001 | Type: WITHDRAWAL | Amount: M3000.00 | Balance: M0.00 | Result: Successful
+2026-10-25 13:13:24 | Account: 900 | Type: WITHDRAWAL | Amount: M300000.00 | Balance: M2000.00 | Result: Rejected: Savings account must retain at least M100.00.
+2026-10-25 13:16:55 | Account: 900 | Type: TRANSFER OUT | Amount: M100.00 | Balance: M1900.00 | Result: Successful; sent to 9001
+2026-10-25 13:16:55 | Account: 9001 | Type: TRANSFER IN | Amount: M100.00 | Balance: M100.00 | Result: Successful; received from 900
+2026-10-25 13:27:39 | Account: shshh | Type: DEPOSIT | Amount: M0.00 | Balance: N/A | Result: Rejected: account not found
